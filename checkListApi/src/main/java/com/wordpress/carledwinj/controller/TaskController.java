@@ -33,7 +33,7 @@ public class TaskController {
 	public List<Task> getAllTasks(){
 		
 		Sort sortByCreatedAtDesk = new Sort(Sort.Direction.DESC, "createdAt");
-		
+		System.out.println("getAllTasks");
 		return repository.findAll(sortByCreatedAtDesk);
 	}
 	
