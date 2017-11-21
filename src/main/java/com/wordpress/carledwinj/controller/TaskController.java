@@ -71,6 +71,8 @@ public class TaskController {
 		taskData.setTitle(task.getTitle());
 		taskData.setDone(task.getDone());
 		
+		repository.save(taskData);
+		
 		return new ResponseEntity<Task>(taskData, HttpStatus.OK);
 	}
 	
